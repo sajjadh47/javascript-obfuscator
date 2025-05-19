@@ -1,39 +1,38 @@
-=== Javascript Obfuscator ===
+=== JavaScript Obfuscator ===
+Tags: obfuscate, encryption, source-code, converter, minify
 Contributors: sajjad67
-Tags: javascript,js,obfuscate,encryption,anti-theft,obfuscating,source-code,file,script,enqueue-scripts,cache,converter,minify
+Author: Sajjad Hossain Sagor
+Tested up to: 6.8
 Requires at least: 5.6
-Tested up to: 6.6
-Stable tag: trunk
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Stable tag: 2.0.1
+Requires PHP: 8.0
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Encrypt Your Javascript Source Code By Obfuscating To Prevent Let Others Copying.
+Encrypt Your JavaScript Source Code By Obfuscating To Prevent Let Others Copying.
 
 == Description ==
 Obfuscate your JavaScript Source Code to enable anti-theft protection by converting your js source code into completely unreadable form & preventing it from analyzing and reusing.
 
 = Features: =
-- Enable/Disable Obsfucating Any Time
-- Exclude/Include Script By File Name
+- Enable/Disable Obfuscating Any Time
+- Include Script By File Name
 - Obfuscate JS Source Code Using 3 Different Modes (Minify Too)
 - Cache Feature
-
-**Interested in contributing to WP Edit Username?**
-Contact me... sagorh672(at)gmail.com
 
 == Installation ==
 To add a WordPress Plugin using the built-in plugin installer:
 
 Go to Plugins > Add New.
 
-1. Type in the name "Javascript Obfuscator" in Search Plugins box
-2. Find the "Javascript Obfuscator" Plugin to install.
+1. Type in the name "JavaScript Obfuscator" in Search Plugins box
+2. Find the "JavaScript Obfuscator" Plugin to install.
 3. Click Install Now to begin the plugin installation.
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
 
-To add a WordPress Plugin from github repo / plugin zip file :
-1. Go to wordpress plugin page
+To add a WordPress Plugin from GitHub repo / plugin zip file :
+1. Go to WordPress plugin page
 2. Click Add New & Upload Plugin
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
@@ -44,9 +43,13 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 Just after installing the plugin, go to settings page and enable the obfuscating settings according to your needs... See screenshot.
 
 == Screenshots ==
-1. Obsfucating Settings
+1. Obfuscating Settings
 
 == Changelog ==
+= 2.0.1 =
+- Checked for latest wp version 6.8
+= 2.0.0 =
+* Major changes in codebase. Compatibility checkup for latest wp version 6.7
 = 1.0.3 =
 - Compatibility check for wp 6.6
 = 1.0.2 =

@@ -1,12 +1,8 @@
 # Javascript Obfuscator
 
-**Contributors:** sajjad67 \
-**Tags:** javascript,js,obfuscate,encryption,anti-theft,obfuscating,source-code,file,script,enqueue-scripts,cache,converter,minify \
-**Requires at least:** 5.6 \
-**Tested up to:** 6.0 \
-**Stable tag:** 1.0.1 \
-**License:** GPLv2 \
-**License URI:** http://www.gnu.org/licenses/gpl-2.0.html
+**Tags:** javascript, js, obfuscate, encryption, anti-theft, obfuscating, source-code, file, script, enqueue-scripts, cache, converter, minify \
+**Tested up to:** 6.8 \
+**Requires PHP:** 8.1
 
 Encrypt Your Javascript Source Code By Obfuscating To Prevent Let Others Copying.
 
@@ -17,12 +13,9 @@ Obfuscate your JavaScript Source Code to enable anti-theft protection by convert
 ### Features:
 
 - Enable/Disable Obsfucating Any Time
-- Exclude/Include Script By File Name
+- Include Script By File Name
 - Obfuscate JS Source Code Using 3 Different Modes (Minify Too)
 - Cache Feature
-
-**Interested in contributing to WP Edit Username?**
-Contact me... sagorh672(at)gmail.com
 
 ## Installation
 
@@ -36,8 +29,8 @@ Go to Plugins > Add New.
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
 If successful, click Activate Plugin to activate it, or Return to Plugin Installer for further actions.
 
-To add a WordPress Plugin from github repo / plugin zip file :
-1. Go to wordpress plugin page
+To add a WordPress Plugin from GitHub repo / plugin zip file :
+1. Go to WordPress plugin page
 2. Click Add New & Upload Plugin
 3. Drag / Click upload the plugin zip file
 4. The resulting installation screen will list the installation as successful or note any problems during the install.
@@ -47,7 +40,7 @@ If successful, click Activate Plugin to activate it, or Return to Plugin Install
 
 ### How to use this plugin?
 
-Just after installing the plugin, go to settings page and enable the obfuscating settings according to your needs... See screenshot.
+Just after installing the plugin, go to settings page and enable the obfuscating settings according to your needs. See screenshot.
 
 ## Screenshots
 
@@ -55,8 +48,10 @@ Just after installing the plugin, go to settings page and enable the obfuscating
 
 ![Obsfucating Settings](https://ps.w.org/javascript-obfuscator/assets/screenshot-1.png)
 
-
 ## Changelog
+
+### 2.0.1
+- Checked for latest wp version 6.8
 
 ### 1.0.1
 
