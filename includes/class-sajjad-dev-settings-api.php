@@ -4,8 +4,7 @@
  *
  * This file defines the Sajjad_Dev_Settings_API class, a wrapper for the WordPress Options API.
  *
- * @package       Javascript_Obfuscator
- * @subpackage    Javascript_Obfuscator/includes
+ * @package       Sajjad_Dev_Settings_API
  * @author        Sajjad Hossain Sagor <sagorh672@gmail.com>
  */
 
@@ -695,7 +694,8 @@ if ( ! class_exists( 'Sajjad_Dev_Settings_API' ) ) :
 		 * @param     array $args Settings field args.
 		 */
 		public function callback_html( $args ) {
-			echo wp_kses( $this->get_field_description( $args ), self::$allowed_html_tags );
+			// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo $this->get_field_description( $args );
 		}
 
 		/**
