@@ -1,5 +1,7 @@
 # Javascript Obfuscator
 
+[![Plugin Banner](https://ps.w.org/javascript-obfuscator/assets/banner-772x250.png)](https://wordpress.org/plugins/javascript-obfuscator/)
+
 **Tags:** javascript, js, obfuscate, encryption, anti-theft, obfuscating, source-code, file, script, enqueue-scripts, cache, converter, minify \
 **Tested up to:** 6.8 \
 **Requires PHP:** 8.1
