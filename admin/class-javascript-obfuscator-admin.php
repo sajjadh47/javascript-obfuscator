@@ -122,7 +122,7 @@ class Javascript_Obfuscator_Admin {
 			'manage_options',
 			'javascript-obfuscator',
 			array( $this, 'menu_page' ),
-			'dashicons-admin-tools'
+			'dashicons-shield'
 		);
 	}
 
