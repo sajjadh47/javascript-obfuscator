@@ -330,10 +330,14 @@ class Javascript_Obfuscator {
 			return false;
 		}
 
-		// Get the list of files and folders, excluding '.' and '..'.
-		$files = array_diff( $wp_filesystem->dirlist( $folder ), array( '.', '..' ) );
+		// Get the list of files and folders.
+		$dir_list = $wp_filesystem->dirlist( $folder );
+		if ( empty( $dir_list ) ) {
+			// Empty folder, just delete it.
+			return $wp_filesystem->delete( $folder, true );
+		}
 
-		foreach ( $files as $file => $file_info ) {
+		foreach ( $dir_list as $file => $file_info ) {
 			$path = trailingslashit( $folder ) . $file;
 
 			if ( 'd' === $file_info['type'] ) {
