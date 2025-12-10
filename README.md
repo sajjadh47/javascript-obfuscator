@@ -3,7 +3,7 @@
 [![Plugin Banner](https://ps.w.org/javascript-obfuscator/assets/banner-772x250.png)](https://wordpress.org/plugins/javascript-obfuscator/)
 
 **Tags:** javascript, js, obfuscate, encryption, anti-theft, obfuscating, source-code, file, script, enqueue-scripts, cache, converter, minify \
-**Tested up to:** 6.8 \
+**Tested up to:** 6.9 \
 **Requires PHP:** 8.1
 
 Encrypt Your Javascript Source Code By Obfuscating To Prevent Let Others Copying.
@@ -51,6 +51,9 @@ Just after installing the plugin, go to settings page and enable the obfuscating
 ![Obsfucating Settings](https://ps.w.org/javascript-obfuscator/assets/screenshot-1.png)
 
 ## Changelog
+
+### 2.0.4
+- Compatibility checkup for latest wp version 6.9
 
 ### 2.0.3
 - Fixed issue: PHP v8.1 warning

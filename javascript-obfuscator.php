@@ -12,8 +12,8 @@
  *
  * Plugin Name:       JavaScript Obfuscator
  * Plugin URI:        https://wordpress.org/plugins/javascript-obfuscator/
- * Description:       Obfuscate your JavaScript Source Code to enable anti-theft protection by converting your js source code into completely unreadable form PluginDescription preventing it from analyzing and reusing.
- * Version:           2.0.3
+ * Description:       Obfuscate your JavaScript Source Code to enable anti-theft protection by converting your js source code into completely unreadable form preventing it from analyzing and reusing.
+ * Version:           2.0.4
  * Requires at least: 5.6
  * Requires PHP:      8.0
  * Author:            Sajjad Hossain Sagor
@@ -32,7 +32,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Currently plugin version.
  */
-define( 'JAVASCRIPT_OBFUSCATOR_PLUGIN_VERSION', '2.0.3' );
+define( 'JAVASCRIPT_OBFUSCATOR_PLUGIN_VERSION', '2.0.4' );
 
 /**
  * Define Plugin Folders Path
