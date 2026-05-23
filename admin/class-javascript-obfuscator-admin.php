@@ -207,10 +207,10 @@ class Javascript_Obfuscator_Admin {
 				),
 				array(
 					'name'        => 'include',
-					'label'       => __( 'Include Files From Obfuscating', 'javascript-obfuscator' ),
-					'type'        => 'text',
-					'desc'        => __( 'Add comma separated js files name to include it while obfuscating... Note only these files will be obfuscated', 'javascript-obfuscator' ),
-					'placeholder' => __( 'app.js, front-script.min.js', 'javascript-obfuscator' ),
+					'label'       => __( 'Files To Obfuscate', 'javascript-obfuscator' ),
+					'type'        => 'textarea',
+					'desc'        => __( 'Add js files (relative path) in each line to include it while obfuscating... Note only these files will be obfuscated', 'javascript-obfuscator' ),
+					'placeholder' => __( '/wp-content/plugins/javascript-obfuscator/public/js/public.js', 'javascript-obfuscator' ),
 				),
 				array(
 					'name'    => 'mode',

@@ -61,8 +61,8 @@ class Javascript_Obfuscator_Public {
 			return;
 		}
 
-		// get all comma separated file list.
-		$included_scripts = array_map( 'trim', explode( ',', Javascript_Obfuscator::get_option( 'include', 'jsobfuscate_basic_settings', '' ) ) );
+		// get all new line separated file list.
+		$included_scripts = array_map( 'trim', explode( "\n", Javascript_Obfuscator::get_option( 'include', 'jsobfuscate_basic_settings', '' ) ) );
 
 		// if no files were provided to obfucate bail early...
 		if ( empty( $included_scripts ) ) {
@@ -71,6 +71,7 @@ class Javascript_Obfuscator_Public {
 
 		// Get the site URL.
 		$parsed_site_url = wp_parse_url( get_site_url() );
+		$allowed_exts    = array( 'js' );
 
 		global $wp_scripts;
 
@@ -88,7 +89,7 @@ class Javascript_Obfuscator_Public {
 				// get script src.
 				$script_src = $wp_scripts->registered[ $handle ]->src;
 
-				// if script is built in wp don't touch it.
+				// if script is core wp don't touch it.
 				$built_in_script = preg_match_all( '/(\/wp-includes\/)|(\/wp-admin\/)/', $script_src, $matches );
 
 				if ( 1 === $built_in_script ) {
@@ -97,7 +98,6 @@ class Javascript_Obfuscator_Public {
 
 				$parsed_src_url = wp_parse_url( $script_src );
 				$pathinfo       = pathinfo( $parsed_src_url['path'] );
-				$allowed_exts   = array( 'js' );
 
 				if ( ! isset( $pathinfo['extension'] ) ) {
 					continue;
@@ -108,22 +108,17 @@ class Javascript_Obfuscator_Public {
 					continue;
 				}
 
-				// Check if the file is from an external domain or CDN or is a relative path (does not start with http or https).
-				if ( ! isset( $parsed_src_url['host'] ) || ! isset( $parsed_src_url['scheme'] ) || $parsed_src_url['host'] !== $parsed_site_url['host'] ) {
-					continue;
-				}
-
-				// check if any valid comma separated file exists.
-				if ( ! in_array( $pathinfo['basename'], $included_scripts, true ) ) {
-					// if not included don't continue.
-					continue;
-				}
-
 				$relative_path         = $pathinfo['dirname'];
 				$filename              = $pathinfo['basename'];
 				$file_full_path        = rtrim( ABSPATH, '/' ) . $parsed_src_url['path'];
 				$cache_target_dir_path = Javascript_Obfuscator::get_cache_dir() . $relative_path;
 				$cache_target_dir_url  = Javascript_Obfuscator::get_cache_dir( false, 'baseurl' ) . $relative_path;
+
+				// check if the script is in the included list.
+				if ( ! in_array( trailingslashit( $relative_path ) . $filename, $included_scripts, true ) ) {
+					// if not included don't continue.
+					continue;
+				}
 
 				global $wp_filesystem;
 
