@@ -2,9 +2,9 @@
 Tags: obfuscate, encryption, source-code, converter, minify
 Contributors: sajjad67
 Author: Sajjad Hossain Sagor
-Tested up to: 7.0
+Tested up to: 7.1
 Requires at least: 5.6
-Stable tag: 2.0.5
+Stable tag: 2.0.6
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -46,6 +46,8 @@ Just after installing the plugin, go to settings page and enable the obfuscating
 1. Obfuscating Settings
 
 == Changelog ==
+= 2.0.6 =
+- Compatibility checkup for latest wp version 7.1
 = 2.0.5 =
 - Compatibility checkup for latest wp version 7.0
 - Changed included file list as relative path in new line.
